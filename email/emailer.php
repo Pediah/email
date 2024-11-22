@@ -29,15 +29,15 @@ foreach ($recipients as $recipient) {
     try {
         // SMTP settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.imanasoft.co.za';
+        $mail->Host = '';
         $mail->SMTPAuth = true;
-        $mail->Username = 'test@imanasoft.co.za';
-        $mail->Password = '5111800703';
+        $mail->Username = '';
+        $mail->Password = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587;
+        $mail->Port = ;
 
         // Email headers and recipient
-        $mail->setFrom('test@imanasoft.co.za', 'Lavish Beauty Salon');
+        $mail->setFrom('', 'Lavish Beauty Salon');
         $mail->addAddress($email, $name . ($surname ? ' ' . $surname : ''));
         $mail->Subject = 'ATTENTION LAVISH BEAUTIES!!!';
 
